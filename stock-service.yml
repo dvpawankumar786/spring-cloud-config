@@ -14,4 +14,4 @@ eureka:
 stock-service:
              ribbon:
                      listOfServers: http://localhost:9098
-testmessage: test
+testmessage: newtest
