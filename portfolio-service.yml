@@ -18,4 +18,4 @@ spring:
 portfolio-service:
              ribbon:
                      listOfServers: http://localhost:9094,http://localhost:9095
-testmessage=helloo
+testmessage: helloo
