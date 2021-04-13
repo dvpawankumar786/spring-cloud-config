@@ -9,7 +9,7 @@ eureka:
       enabled: true
     lease:
       duration: 0
-    eureka-server-port: :8761
+    eureka-server-port: 8761
     
 stock-service:
              ribbon:
