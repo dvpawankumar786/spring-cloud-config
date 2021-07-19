@@ -1,11 +1,21 @@
 server:
-  port: ${PORT:8761}
+  port: 8761
+
 eureka:
+  instance:
+    hostname: eureka
   client:
     registerWithEureka: false
     fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+
+spring:
+  application:
+    name: eureka
+  cloud:
+    config:
+      uri: ${CONFIG_SERVER_URL:http://localhost:8888}
 
 management:
   security:
