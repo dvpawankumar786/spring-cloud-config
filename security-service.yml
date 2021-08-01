@@ -4,7 +4,7 @@ eureka:
     leaseExpirationDurationInSeconds: 1
   client:
     serviceUrl:
-      defaultZone: http://127.0.0.1:8761/eureka/
+      defaultZone: ${EUREKA_SERVER:http://localhost:8761/eureka}
     healthcheck:
       enabled: true
     lease:
@@ -14,7 +14,3 @@ eureka:
 spring:
   application:
     name: security-service
-
-security-service:
-             ribbon:
-                     listOfServers: http://localhost:9092
