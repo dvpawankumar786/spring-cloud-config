@@ -11,7 +11,7 @@ eureka:
       duration: 0
     eureka-server-port: 8761
 server:
-  contextPath: /       
+  contextPath: /spring-boot-security-jwt
 spring:
   application:
     name: security-service
